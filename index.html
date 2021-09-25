@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Folio</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <!-- <link rel="manifest" href="./img/site.webmanifest"> -->
+  <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Production-ready Portfolio and Case Study Template for Visual Designers">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ui8">
+  <meta name="twitter:title" content="Folio Designer">
+  <meta name="twitter:description" content="Production-ready Portfolio and Case Study Template for Visual Designers">
+  <meta name="twitter:creator" content="@ui8">
+  <meta name="twitter:image" content="https://ui8-folio.herokuapp.com/img/twitter-card.jpg">
+  <meta property="og:title" content="Folio Designer">
+  <meta property="og:type" content="Article">
+  <meta property="og:url" content="https://ui8.net/ui8/products/folio-designer">
+  <meta property="og:image" content="https://ui8-folio.herokuapp.com/img/fb-og-image.jpg">
+  <meta property="og:description" content="Production-ready Portfolio and Case Study Template for Visual Designers">
+  <meta property="og:site_name" content="Folio Designer">
+  <meta property="fb:admins" content="132951670226590">
+  <link rel="stylesheet" media="all" href="css/app.css">
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="main">
+      <div class="header js-header" id="header">
+        <div class="header__center center"><a class="header__logo" href="index.html"><img class="header__pic"
+              src="./img/logo.svg" alt="" /></a>
+          <div class="header__social header__social_main"><a class="header__link" href="#"><svg
+                class="icon icon-dribbble">
+                <use xlink:href="./img/sprite.svg#icon-dribbble"></use>
+              </svg>Telegram</a><a class="header__link" href="#"><svg class="icon icon-instagram">
+                <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+              </svg>Instagram</a></div><button class="header__burger js-header-burger"></button>
+        </div>
+        <div class="header__wrapper js-header-wrapper">
+          <div class="header__preview"><a class="header__logo" href="index.html"><img class="header__pic"
+                src="./img/logo-white.svg" alt="" /></a>
+            <div class="header__img"><img class="header__pic" src="./img/bg-header.png" alt="" /></div>
+          </div>
+          <div class="header__center center">
+            <div class="header__contacts"><a class="header__line" href="mailto:abuzcoder@gmail.com">
+                <div class="header__icon"><svg class="icon icon-email">
+                    <use xlink:href="./img/sprite.svg#icon-email"></use>
+                  </svg></div>
+                <div class="header__text">abuzcoder@gmail.com</div>
+              </a>
+              <div class="header__line">
+                <div class="header__icon"><svg class="icon icon-place">
+                    <use xlink:href="./img/sprite.svg#icon-place"></use>
+                  </svg></div>
+                <div class="header__text d-none">
+                  <p>4074 Ebert Summit Suite 375</p>
+                  <p>Lake Leonardchester</p>
+                </div>
+              </div><a class="header__line" href="tel:+441236547890">
+                <div class="header__icon"><svg class="icon icon-phone">
+                    <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                  </svg></div>
+                <div class="header__text">+998 33 065 74 27 </div>
+              </a>
+            </div>
+            <nav class="header__nav">
+              <a class="header__item js-scroll" href="#about">
+                <span>About</span>
+              </a>
+              <a class="header__item js-scroll" href="#work">
+                <span>Work</span>
+              </a>
+              <a class="header__item js-scroll" href="#service">
+                <span>Services</span>
+              </a>
+              <a class="header__item js-scroll" href="#contact">
+                <span>Contact</span>
+              </a>
+            </nav>
+            <div class="header__social header__social_inner"><a class="header__link" href="#"><svg
+                  class="icon icon-dribbble">
+                  <use xlink:href="./img/sprite.svg#icon-dribbble"></use>
+                </svg>Telegram</a><a class="header__link" href="#"><svg class="icon icon-instagram">
+                  <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                </svg>Instagram</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="main__bg"><img class="main__pic" src="./img/bg-main.jpg" alt=""></div>
+      <div class="main__center center">
+        <div class="main__wrap">
+          <div class="main__stage stage" data-aos="transform">DEV4</div>
+          <h1 class="main__title title h1">
+            <span data-aos="transform" class="header_title-noanim" data-aos-delay="150">We build</span>
+            <span data-aos="transform" class="header_animation-title" data-aos-delay="300">
+              <div class="anim">
+                <div class="cube__face cube__face--front">Websites</div>
+                <div class="cube__face cube__face--back">Mobile apps</div>
+                <div class="cube__face cube__face--top">UI/UX design</div>
+                <div class="cube__face cube__face--bottom">CRM system</div>
+              </div>
+            </span>
+            <span data-aos="transform" class="header_title-noanim" data-aos-delay="450">that build</span>
+            <span data-aos="transform" class="header_title-noanim" data-aos-delay="600">your business.</span>
+          </h1><a class="scroll js-scroll" href="#details" data-aos="transform">
+            <div class="scroll__icon"><img class="scroll__pic" src="./img/scroll.svg" alt=""></div>
+            <div class="scroll__text">Scroll down</div>
+          </a>
+        </div>
+      </div>
+      <div class="main__view" data-aos>
+        <div class="main__preview"><img class="main__pic" src="./img/main-pic-6.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic js-parallax" data-scale="2.5" data-orientation="up"
+            src="./img/main-pic-1.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.5" data-orientation="up"
+            src="./img/main-pic-2.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic" src="./img/main-pic-3.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic" src="./img/main-pic-4.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic js-parallax" data-scale="4.5" data-orientation="up"
+            src="./img/main-pic-5.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.5" data-orientation="down"
+            src="./img/main-pic-7.png" alt=""></div>
+      </div>
+      <div class="main__figures">
+        <div class="main__figure" data-aos="animation-translate-y"><img class="main__pic js-parallax" data-scale="2.2"
+            data-orientation="down" src="./img/figure-1.png" alt=""></div>
+        <div class="main__figure" data-aos="animation-translate-y" data-aos-delay="200"><img
+            class="main__pic js-parallax" data-scale="2.2" data-orientation="up" src="./img/figure-2.png" alt=""></div>
+        <div class="main__figure" data-aos="animation-translate-y" data-aos-delay="400"><img class="main__pic"
+            src="./img/figure-3.png" alt=""></div>
+      </div>
+    </div>
+    <div class="details" id="details">
+      <div class="details__center center">
+        <div class="details__head" data-aos="animation-scale-y">
+          <div class="details__stage stage">What I Do</div>
+          <h3 class="details__info h3">I enjoy creating delightful, <br>human-centered digital experiences.</h3>
+        </div>
+        <h2 class="details__title" data-aos="animation-scale-y">Think. Make. <br>Solve. </h2>
+        <div class="details__btn" data-aos="animation-translate-y"><button class="btn btn_purple"><span
+              class="btn__text">Contact Me</span>
+            <img class="icon icon-arrow-right" src="./img/sprite.svg" alt="">
+          </button></div>
+        <div class="details__container" id="service">
+          <div class="details__item">
+            <div class="details__preview " data-aos="animation-scale">
+              <div class="details__img"><img class="details__pic" src="./img/5.svg" alt=""></div>
+            </div>
+            <h5 class="details__category h5" data-aos="animation-scale-y">Websites</h5>
+
+            <div class="details__btn" data-aos="animation-scale-y"><button class="btn btn_purple">Find out more
+              </button></div>
+          </div>
+          <div class="details__item">
+            <div class="details__preview " data-aos="animation-scale" data-aos-delay="150">
+              <div class="details__img"><img class="details__pic" src="./img/1.svg" alt=""></div>
+            </div>
+            <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="150">Mobile apps</h5>
+
+            <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="150"><button
+                class="btn btn_purple">Find out more </button></div>
+          </div>
+          <div class="details__item">
+            <div class="details__preview " data-aos="animation-scale" data-aos-delay="300">
+              <div class="details__img"><img class="details__pic" src="./img/2.svg" alt=""></div>
+            </div>
+            <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="300">System</h5>
+
+            <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="300"><button
+                class="btn btn_purple">Find out more </button></div>
+          </div>
+          <div class="details__item">
+            <div class="details__preview ">
+              <div class="details__img"><img class="details__pic" src="./img/3.svg" alt=""></div>
+            </div>
+            <h5 class="details__category h5">Telegram bot</h5>
+            <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="300"><button
+                class="btn btn_purple">Find out more </button></div>
+          </div>
+          <div class="details__item">
+            <div class="details__preview ">
+              <div class="details__img"><img class="details__pic" src="./img/6.svg" alt=""></div>
+            </div>
+            <h5 class="details__category h5">eCommerce
+            </h5>
+            <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="300"><button
+                class="btn btn_purple">Find out more </button></div>
+          </div>
+          <div class="details__item">
+            <div class="details__preview ">
+              <div class="details__img"><img class="details__pic" src="./img/4.svg" alt=""></div>
+            </div>
+            <h5 class="details__category h5">Web design
+            </h5>
+            <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="300"><button
+                class="btn btn_purple">Find out more </button></div>
+            <!-- <button class="details__btn btn btn_purple">Find out more</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="details__figures">
+        <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="down"
+            src="./img/figure-1.png" alt=""></div>
+        <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="up"
+            src="./img/figure-2.png" alt=""></div>
+        <div class="details__figure"><img class="details__pic js-parallax" data-scale="1.2" data-orientation="up"
+            src="./img/figure-3.png" alt=""></div>
+      </div><a class="details__contact" href="#"></a>
+    </div>
+    <div class="wrapper wrapper_gradient">
+      <div class="cases cases_main" id="work">
+        <div class="cases__center center">
+          <div class="cases__stage stage" data-aos="animation-scale-y">Portfolio</div>
+          <h2 class="cases__title h1" data-aos="animation-scale-y" data-aos-delay="150">Look at Our <br>Products.</h2>
+          <div class="cases__nav" data-aos="animation-scale-y" data-aos-delay="300">
+            <a class="cases__link active" href="" data-filter="*">All</a>
+            <a class="cases__link" href="" data-filter=".website">Website</a>
+            <a class="cases__link" href="" data-filter=".mobile">Mobile apps</a>
+            <a class="cases__link" href="" data-filter=".system">Systems</a>
+          </div>
+          <div class="cases__list" id="cases__list" data-items-mobile-portrait="1" data-items-mobile-album="1"
+            data-autoheight></div>
+        </div>
+        <div class="cases__figures">
+          <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="2" data-orientation="down"
+              src="./img/figure-2.png" alt=""></div>
+          <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="1.8" data-orientation="down"
+              src="./img/figure-3.png" alt=""></div>
+        </div>
+      </div>
+      <div class="work" id="about">
+        <div class="work__circles"></div>
+        <div class="work__center center">
+          <div class="work__wrap">
+            <div class="work__stage stage stage_pink" data-aos="animation-scale-y">Aim</div>
+            <h2 class="work__title title h2" data-aos="animation-scale-y" data-aos-delay="150">The goal is not to create
+              a website. The goal is to build your business.
+            </h2>
+            <div class="work__text" data-aos="animation-scale-y" data-aos-delay="300">We help bring business to the next
+              level by studying the needs of our clients. Our solutions include attracting new customers, giving your
+              business a professional online look
+            </div><a class="scroll js-scroll" data-aos="animation-scale-y" href="#cases">
+              <div class="scroll__icon"><img class="scroll__pic" src="./img/scroll.svg" alt=""></div>
+              <div class="scroll__text">Scroll down</div>
+            </a>
+          </div>
+        </div>
+        <div class="work__preview"><img class="work__pic js-parallax" data-scale="2" data-orientation="down"
+            src="./img/work-cube.png" alt=""></div>
+        <div class="work__figures" data-aos>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.3" data-orientation="up"
+              src="./img/work-cube-1.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.5" data-orientation="up left"
+              src="./img/work-cube-2.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.3" data-orientation="up right"
+              src="./img/work-cube-3.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic" src="./img/work-cube-4.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.1" data-orientation="left"
+              src="./img/work-cube-5.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.2" data-orientation="right"
+              src="./img/work-cube-6.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.2" data-orientation="down"
+              src="./img/work-cube-7.png" alt=""></div>
+        </div>
+      </div>
+      <div class="review d-none">
+        <div class="review__center center">
+          <div class="review__stage stage" data-aos="animation-scale-y">What People Say</div>
+          <h2 class="review__title title h1" data-aos="animation-scale-y" data-aos-delay="200">Trusted by <br>Clients.
+          </h2>
+          <div class="review__container" data-aos="animation-translate-y" data-aos-delay="400">
+            <div class="review__slider owl-carousel js-slider-review">
+              <div class="review__item">
+                <div class="review__text">“ Folio Designer is a clean and creative landing page that matches with any
+                  freelancer or designer, you can easily to build the page in Sketch or Figma.”</div>
+                <div class="review__author">
+                  <div class="review__ava"><img class="review__pic" src="./img/ava-1.jpg" alt=""></div>
+                  <div class="review__details">
+                    <div class="review__man h5">Dash</div>
+                    <div class="review__company">UI8</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review__item">
+                <div class="review__text">“ Folio Designer is a clean and creative landing page that matches with any
+                  freelancer or designer, you can easily to build the page in Sketch or Figma.”</div>
+                <div class="review__author">
+                  <div class="review__ava"><img class="review__pic" src="./img/ava-1.jpg" alt=""></div>
+                  <div class="review__details">
+                    <div class="review__man h5">Dash</div>
+                    <div class="review__company">UI8</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review__item">
+                <div class="review__text">“ Folio Designer is a clean and creative landing page that matches with any
+                  freelancer or designer, you can easily to build the page in Sketch or Figma.”</div>
+                <div class="review__author">
+                  <div class="review__ava"><img class="review__pic" src="./img/ava-1.jpg" alt=""></div>
+                  <div class="review__details">
+                    <div class="review__man h5">Dash</div>
+                    <div class="review__company">UI8</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review__item">
+                <div class="review__text">“ Folio Designer is a clean and creative landing page that matches with any
+                  freelancer or designer, you can easily to build the page in Sketch or Figma.”</div>
+                <div class="review__author">
+                  <div class="review__ava"><img class="review__pic" src="./img/ava-1.jpg" alt=""></div>
+                  <div class="review__details">
+                    <div class="review__man h5">Dash</div>
+                    <div class="review__company">UI8</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review__bg">
+          <div class="review__preview"><img class="review__pic js-parallax" data-scale="1.5" data-orientation="down"
+              src="./img/review-cube.png" alt=""></div>
+          <div class="review__preview"><img class="review__pic" src="./img/review-cube.png" alt=""></div>
+        </div>
+      </div>
+      <div class="wrapper wrapper_dark" id="contact">
+        <div class="contacts">
+          <div class="contacts__center center">
+            <div class="contacts__container">
+              <div class="contacts__wrap">
+                <div class="contacts__stage stage" data-aos="animation-scale-y">Say hello 👋</div>
+                <h2 class="contacts__title h1" data-aos="animation-scale-y" data-aos-delay="200">Let’s Work
+                  <br>Together.
+                </h2>
+                <div class="contacts__info" data-aos="animation-scale-y" data-aos-delay="400">I’d love to meet up with
+                  you to discuss your venture, and potential collaborations.</div>
+              </div>
+              <div class="contacts__row">
+                <div class="contacts__details" data-aos="animation-translate-y"><a class="contacts__line"
+                    href="mailto:abuzcoder@gmail.com">
+                    <div class="contacts__icon">
+                      <!-- icon icon-email -->
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="icon icon-email"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM14.7 6.1875L9.3975 9.5025C9.1575 9.6525 8.8425 9.6525 8.6025 9.5025L3.3 6.1875C3.1125 6.0675 3 5.865 3 5.6475C3 5.145 3.5475 4.845 3.975 5.1075L9 8.25L14.025 5.1075C14.4525 4.845 15 5.145 15 5.6475C15 5.865 14.8875 6.0675 14.7 6.1875Z"
+                          fill="gray" />
+                      </svg>
+
+                    </div>
+                    <div class="contacts__text">abuzcoder@gmail.com</div>
+                  </a>
+                  <div class="contacts__line d-none">
+                    <div class="contacts__icon d-none">
+                      <!--  -->
+                      <svg class="icon icon-place" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9 1.5C6.0975 1.5 3.75 3.8475 3.75 6.75C3.75 9.8775 7.065 14.19 8.43 15.8325C8.73 16.1925 9.2775 16.1925 9.5775 15.8325C10.935 14.19 14.25 9.8775 14.25 6.75C14.25 3.8475 11.9025 1.5 9 1.5ZM9 8.625C7.965 8.625 7.125 7.785 7.125 6.75C7.125 5.715 7.965 4.875 9 4.875C10.035 4.875 10.875 5.715 10.875 6.75C10.875 7.785 10.035 8.625 9 8.625Z"
+                          fill="gray" />
+                      </svg>
+
+                    </div>
+                    <div class="contacts__text d-none">
+                      <p>4074 Ebert Summit Suite 375</p>
+                      <p>Lake Leonardchester</p>
+                    </div>
+                  </div><a class="contacts__line" href="tel:+441236547890">
+                    <div class="contacts__icon">
+                      <svg class="icon icon-phone" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.4223 11.445L12.5173 11.2275C12.0598 11.175 11.6098 11.3325 11.2873 11.655L9.90729 13.035C7.78479 11.955 6.04479 10.2225 4.96479 8.0925L6.35229 6.705C6.67479 6.3825 6.83229 5.9325 6.77979 5.475L6.56229 3.585C6.47229 2.8275 5.83479 2.2575 5.06979 2.2575H3.77229C2.92479 2.2575 2.21979 2.9625 2.27229 3.81C2.66979 10.215 7.79229 15.33 14.1898 15.7275C15.0373 15.78 15.7423 15.075 15.7423 14.2275V12.93C15.7498 12.1725 15.1798 11.535 14.4223 11.445V11.445Z"
+                          fill="gray" />
+                      </svg>
+
+                    </div>
+                    <div class="contacts__text">+998 33 065 74 27</div>
+                  </a>
+                </div>
+                <form id="form-submit" class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
+                  <div class="contacts__field field">
+                    <div class="field__wrap">
+                      <input class="field__input" type="text" name="name" placeholder="Name" />
+                      <div class="field__icon">
+                        <svg class="icon icon-profile">
+                          <use xlink:href="./img/sprite.svg#icon-profile"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contacts__field field">
+                    <div class="field__wrap">
+                      <input class="field__input" type="tel" name="phone" placeholder="Phone number" />
+                      <div class="field__icon">
+                        <svg class="icon icon-send">
+                          <use xlink:href="./img/sprite.svg#icon-send"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contacts__field field">
+                    <div class="field__wrap">
+                      <select class="field__select" name="question">
+                        <option>Website</option>
+                        <option>Mobile app</option>
+                        <option>System</option>
+                        <option>Telegram bot</option>
+                        <option>eCommerce</option>
+                        <option>Web design</option>
+                        <option>Agreement project</option>
+                      </select>
+                      <div class="field__icon">
+                        <svg class="icon icon-arrows">
+                          <use xlink:href="./img/sprite.svg#icon-arrows">
+                          </use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contacts__field field field_textarea">
+                    <div class="field__wrap">
+                      <textarea class="field__textarea" name="message" placeholder="Message"></textarea>
+                      <div class="field__icon">
+                        <svg class="icon icon-message">
+                          <use xlink:href="./img/sprite.svg#icon-message"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contacts__btn">
+                    <button class="btn btn_purple" id="btn-submit"><span class="btn__text">Let’s
+                        Talk</span></button>
+                  </div>
+                </form>
+              </div>
+              <div class="contacts__category h5">Let’s connect</div>
+              <div class="figures">
+                <div class="figures__preview">
+                  <img class="figures__pic" src="./img/figures-1.png" alt="" />
+                </div>
+                <div class="figures__preview">
+                  <img class="figures__pic js-parallax" data-scale="1.6" data-orientation="up" src="./img/figures-2.png"
+                    alt="" />
+                </div>
+                <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.3"
+                    data-orientation="up" src="./img/figures-3.png" alt="" /></div>
+                <div class="figures__preview"><img class="figures__pic" src="./img/figures-4.png" alt="" /></div>
+                <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2.3"
+                    data-orientation="down" src="./img/figures-5.png" alt="" /></div>
+                <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2" data-orientation="up"
+                    src="./img/figures-6.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer__center center">
+            <div class="footer__body"><a class="footer__logo" href="index.html"><img class="footer__pic"
+                  src="./img/logo-empty.svg" alt="" /></a>
+              <div class="footer__wrap">
+                <div class="footer__title h1">You only have one chance to make a first impression.</div>
+                <div class="footer__info h4">Let’s make it an amazing one.</div>
+              </div>
+              <div class="footer__menu">
+                <a class="footer__link" href="#">About Me</a><a class="footer__link" href="#">Projects</a><a
+                  class="footer__link" href="#">Contact</a><a class="footer__link" href="#">Dribbble</a><a
+                  class="footer__link" href="#">Instagram</a>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__copyright">© 2020, UI8 LLC.</div><a class="footer__scroll js-scroll"
+                href="#header">Back to top</a>
+            </div>
+          </div>
+          <div class="footer__bg">
+            <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.5" data-orientation="down"
+                src="./img/footer-cube-1.png" alt="" /></div>
+            <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.8" data-orientation="up"
+                src="./img/footer-cube-1.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cursor"></div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+  <!-- <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_uwos7l6e.json" mode="bounce" background="rgba(255, 255, 255, 0)"  speed="0.7"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player> -->
+  <script src="./js/isotope.pkgd.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDlX3FcIXDyOXYcoyoSUGlXQPsZVV3bg74",
+      authDomain: "portfolio-c4112.firebaseapp.com",
+      databaseURL: "https://portfolio-c4112-default-rtdb.firebaseio.com",
+      projectId: "portfolio-c4112",
+      storageBucket: "portfolio-c4112.appspot.com",
+      messagingSenderId: "274546371360",
+      appId: "1:274546371360:web:595c14d535c9fdc0b8c545",
+      measurementId: "G-9MLR9X7D3R"
+    };
+    const app = firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="./js/firebase.js"></script>
+  <script src="./js/portfolio.append.js"></script>
+</body>
+
+</html>
